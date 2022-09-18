@@ -1,0 +1,84 @@
+      body {
+        font-family: "Oxygen", sans-serif;
+        background-image: url("backgr.jpg");
+        background-position: center;
+      }
+
+      .btn {
+        background-color: #2511d8;
+        color: #fff3e1cb;
+      }
+      .coffee_txt {
+        margin-top: 1rem;
+        border: 2px dotted #fff3e1cb;
+        border-radius: 8px;
+        background-color: #a47f66c7;
+      }
+      .coffee_btn {
+        width: 0;
+        height: 0;
+        border-top: 30px solid transparent;
+        border-left: 70px solid #fff3e1cb;
+        border-bottom: 30px solid transparent;
+      }
+      .coffee_btn:hover {
+        width: 0;
+        height: 0;
+        border-top: 40px solid transparent;
+        border-left: 80px solid #e6d4ba;
+        border-bottom: 40px solid transparent;
+        cursor: pointer;
+      }
+      .coffee_txt > span {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 80px;
+        vertical-align: middle;
+        margin-left: 20px;
+      }
+      #display {
+        width: 100%;
+        height: 196px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #a47f669a;
+        color: #1a1918;
+        border: 2px dotted #fff3e1cb;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+      }
+      img[src$="rub.jpg"]:hover {
+        cursor: pointer;
+        filter: contrast(150%);
+      }
+      .fa-solid {
+        color: rgb(37, 17, 216);
+      }
+      #changeBox {
+        width: 250px;
+        height: 200px;
+        position: relative;
+        background-color: #e6d4ba9d;
+        border: 2px dotted #896045;
+        border-radius: 8px;
+      }
+      img[src$="rub.png"] {
+        width: 70px;
+        position: absolute;
+      }
+      .animated {
+        animation-name: hide-bill;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+      }
+      @keyframes hide-bill {
+        0% {
+          transform: rotate(-90deg) rotateY(1deg);
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(-90deg) rotateY(60deg);
+          opacity: 0;
+        }
+      }
